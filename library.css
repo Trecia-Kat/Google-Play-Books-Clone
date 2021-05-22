@@ -1,0 +1,56 @@
+
+* {
+    /* transform-style: preserve-3d; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    position: relative;
+    top: 5px;
+    /* left: 30px; */
+    column-count: 4;
+    padding: 10px;
+    margin: 35px auto; 
+    margin-bottom: 175px;
+}
+.wrapper .image {
+    display: inline-block;
+    margin-bottom: 60px;   
+    /* was supposed to make the images sizes even */
+    flex-direction: column; 
+    justify-content: center;
+    align-content: flex-start;
+}
+.wrapper .image span {
+  color: rgb(8, 8, 8);
+  font-weight: 700;
+  cursor: pointer;
+}
+.wrapper .image h2 {
+  font-weight: 1em;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+.wrapper .image img {
+    width: 100%;
+    transition: .5s ease-in-out;
+}
+.image:hover img {
+    transform: scale(.95);
+}
+@media screen and (max-width: 768px) {
+    .wrapper  {
+        column-count: 3;
+    }
+}
+@media screen and (max-width: 425px) {
+    .wrapper {
+        column-count: 2;
+    }
+}
+@media screen and (max-width: 375px) {
+    .wrapper  {
+        column-count: 2;
+    }
+} 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Books - Library</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="library.css">
+</head>
+<body>
+  <!-- search bar container -->
+<div class="hero">
+  <div id="searchBox">
+    <img src="google.jpg"  class="img-box" id= "googleIcon "alt="">
+     <input type="text" placeholder="Search For Book">
+      <div class="img-box">
+       <img onclick="togglePopup()" src="IMG-20170808-WA0031.jpg" alt="">
+     </div>
+  </div>
+</div>
+<!-- end of search bar container -->
+
+<!-- bottom nav bar -->
+  <nav class="nav">
+    <a href="/home.html" class="nav-link">
+     <img src="home-1.png" alt="" width="30px">
+      <span class="nav_text">Home</span>
+    </a>
+        <a href="#" class="nav-link">
+     <img src="library-1.png" alt="" width="30px">
+      <span class="nav_text">Library</span>
+    </a>
+        <a href="shop.html" class="nav-link">
+     <img src="shopping-cart.png" alt="" width="30px">
+      <span class="nav_text">Shop</span>
+    </a>
+  </nav>
+<!-- end of bottom nav bar -->
+
+ <!-- POPUP -->
+ <!-- popup menu slash settings -->
+ <div class="popup" id="popUp" >
+  <div class="content">
+
+<!-- close button -->
+<div class="close-btn" onclick="togglePopup()"><img src="close-circular-button-symbol.png" alt="" width="30px"></div>
+
+<!-- start on summary block -->
+  <!-- <details>
+    <summary> -->
+   <div class="img-bx">
+    <img src="IMG-20170808-WA0031.jpg" alt="">
+     </div>
+      <h4 class="imgText" >Trecia Kat <br><span>treciakat@gmail.com</span></h4>
+
+    <h3 class="accounts">Manage Your Accounts</h3>
+    <hr>
+      <p>Add New Account</p>
+    <!-- </summary>
+    </details> -->
+    <hr>
+<!-- end of summary block -->
+
+<!-- icons and text option messages -->
+    <div class="settings">
+      <a href="#" class="nav-link">
+        <img src="settings.png" alt="" width="15px">
+        <span>Play Books Settings</span>
+      </a>
+      <a href="#" class="nav-link">
+        <img src="zoom.png" alt="" width="15px">
+        <span>Find Help</span>
+      </a>
+    </div>
+    <hr>
+
+<!-- policies and tlc's -->
+    <footer>
+      <ul>
+        <li><a href="#">Pricing Policy</a></li>
+        <li class="border"><a href="#">Terms Of Genre</a></li>
+      </ul>
+    </footer>
+  </div>
+ </div>
+<!-- end of pop up menu -->
+</div>
+<!-- end of content -->
+
+<!-- books -->
+<!-- book section start -->
+<div class="wrapper">
+  <div class="image">
+    <img src="books/image.jpg" alt="" width="250px">
+    <h2>IT</h2>
+    <span>Stephen King</span>
+  </div>
+    <div class="image">
+    <img src="books/42201321.jpg" alt="" width="250px">
+    <h2>The Outsider</h2>
+    <span>Stephen King</span>
+  </div>
+    <div class="image">
+    <img src="books/811YVaMqVuL.jpg" alt="" width="250px">
+    <h2>In The Dark Of The Night</h2>
+    <span>John Saul</span>
+  </div>
+    <div class="image">
+    <img src="books/51QhEKQwJ-L-1.jpg" alt="" width="250px">
+    <h2>Midnight Screams</h2>
+    <span>Sarah Clancy</span>
+  </div>
+    <div class="image">
+    <img src="books/6546.jpg" alt="" width="250px">
+    <h2>Perfect Nightmare</h2>
+    <span>John Saul</span>
+  </div>
+    <div class="image">
+    <img src="books/siren.jpg" alt="" width="250px">
+    <h2>The Siren And The Specter</h2>
+    <span>Jonathan Janz</span>
+  </div>
+    <div class="image">
+    <img src="books/953334.jpg" alt="" width="250px">
+    <h2>The Good House</h2>
+    <span>Tananarive Due</span>
+  </div>
+    <div class="image">
+    <img src="books/6318775.jpg" alt="" width="250px">
+    <h2>Urban Gothic</h2>
+    <span>Brian Keene</span>
+  </div>
+</div>
+
+<script>
+//  active pop-up
+function togglePopup() {
+  document.getElementById("popUp").classList.toggle("active")
+}
+</script>
+</body>
+</html>

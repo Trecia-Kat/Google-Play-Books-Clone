@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Play Books - Clone</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #000000;
+        }
+        .play-logo {
+            border-left: 10px solid #000;
+            border-top: 100px solid transparent;
+            border-bottom: 100px solid transparent;
+            border-left: 180px solid rgb(10, 86, 173);
+            position: absolute;
+            top: 10%;
+            left: 35%;
+        }
+        .play-book {
+            border: 2px solid #000;
+            border-radius: 20px;
+            height: 120px;
+            width: 106px;
+            position: absolute;
+            left: -153px;
+            bottom: -35px;
+        }
+        .play-book {
+            background: linear-gradient(to right, rgb(38, 122, 219) 20%, #000 10%, rgb(57, 183, 206) 20%);
+        }
+        .bookmark {
+            position: relative;
+            left: 70px;
+            height: 35px;
+            width: 15px;
+            background-color: rgb(219, 205, 205);
+            border: 5px ouset #000;
+            z-index: 4;
+        }
+        h1 {
+            position: relative;
+            top: 350px;
+            right: 110px;
+            color: grey;
+            font-size: 63px;
+            font-family: serif;
+            white-space: nowrap;;
+
+        }
+        /* .line {
+            position: absolute;
+            left: -2px;
+            top: 142px;
+            height: 100px;
+            width: 38px;
+            border: 2px solid rgb(0, 0, 0);
+            border-top: 2px solid transparent;
+            background-color: rgb(0, 169, 199);
+            z-index: 1;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class= "play-logo">
+        <div class="play-book">
+            <div class="line"></div>
+            <div class="bookmark"></div>
+            <h1>Google Play</h1>
+        </div>
+    </div>
+
+</body>
+</html>
